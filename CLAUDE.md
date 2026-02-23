@@ -1,7 +1,7 @@
 # PM-shogun マルチエージェントシステム設定
 
 > multi-agent-shogun をビジネスプロジェクト向けにカスタマイズしたシステム
-> Version: 1.1 (2026-02-23)
+> Version: 1.2 (2026-02-23)
 
 ## システム概要
 
@@ -14,9 +14,8 @@
 社長（President / 人間）
   └── 部長（Bucho / Director）×1 ─── 戦略的意思決定・ゴール設定
         └── PM（Project Manager）×1 ─── タスク分配・進捗管理
-              ├── メンバー（Member）×5 ─── 並列コーディング実行
-              ├── テックリード（Tech Lead）×1 ── 設計レビュー・技術分析
-              ├── 仕様管理者（Spec Manager）×1 ── 仕様策定・整合性評価・逸脱アラート
+              ├── メンバー（Member）×6 ─── 並列コーディング実行
+              ├── テックリード（Tech Lead）×1 ── 設計レビュー・技術分析・仕様管理
               └── QAリード（QA Lead）×1 ── テスト戦略・テスト実行・品質ゲート管理
 ```
 
@@ -27,9 +26,8 @@
 | 社長 | President | - | 1（人間） |
 | 部長 | Director | bucho | 1 |
 | PM | Project Manager | pm | 1 |
-| メンバー | Member | member-1〜5 | 5 |
+| メンバー | Member | member-1〜6 | 6 |
 | テックリード | Tech Lead | techlead | 1 |
-| 仕様管理者 | Spec Manager | spec-mgr | 1 |
 | QAリード | QA Lead | qa-lead | 1 |
 
 ## 通信プロトコル
